@@ -3,7 +3,7 @@ inherit_from: .rubocop_todo.yml
 AllCops:
   TargetRubyVersion: 2.0
   SuggestExtensions: false
-  NewCops: disable
+  NewCops: enable
 
   DisplayCopNames: true
   Exclude:
