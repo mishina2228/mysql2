@@ -32,6 +32,7 @@ RSpec.configure do |config|
     @clients ||= []
     @clients << client
     return client unless block_given?
+
     begin
       yield client
     ensure
