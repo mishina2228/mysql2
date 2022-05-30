@@ -19,7 +19,12 @@ group :test do
   # Downgrade psych because old RuboCop can't use new Psych
   gem 'psych', '< 4.0.0'
   # https://github.com/bbatsov/rubocop/pull/4789
-  gem 'rubocop', '~> 1.30' if Gem::Version.new(RUBY_VERSION) >= Gem::Version.new('2.6')
+  if Gem::Version.new(RUBY_VERSION) >= Gem::Version.new('2.6')
+    gem 'rubocop', '~> 1.30'
+    gem 'rubocop-rake'
+    gem 'rubocop-rspec'
+    gem 'rubocop-sequel'
+  end
 end
 
 group :benchmarks, optional: true do
