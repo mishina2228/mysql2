@@ -1,4 +1,4 @@
-require './spec/spec_helper.rb'
+require './spec/spec_helper'
 
 RSpec.describe Mysql2::Statement do
   before(:example) do
@@ -277,7 +277,7 @@ RSpec.describe Mysql2::Statement do
   end
 
   context "#each" do
-    # note: The current impl. of prepared statement requires results to be cached on #execute except for streaming queries
+    # NOTE: The current impl. of prepared statement requires results to be cached on #execute except for streaming queries
     #       The drawback of this is that args of Result#each is ignored...
 
     it "should yield rows as hash's" do
