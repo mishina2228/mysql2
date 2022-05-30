@@ -32,7 +32,7 @@ def mysql_cast(type, value)
       Mysql::Field::TYPE_VAR_STRING, Mysql::Field::TYPE_CHAR, Mysql::Field::TYPE_SET,
       Mysql::Field::TYPE_ENUM
     value
-  else
+  else # rubocop:disable Lint/DuplicateBranch
     value
   end
 end
