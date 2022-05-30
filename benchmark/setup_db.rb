@@ -9,7 +9,7 @@ require 'mysql2'
 require 'rubygems'
 require 'faker'
 
-num = ENV['NUM'] && ENV['NUM'].to_i || 10_000
+num = (ENV['NUM'] && ENV['NUM'].to_i) || 10_000
 
 create_table_sql = %[
   CREATE TABLE IF NOT EXISTS mysql2_test (
