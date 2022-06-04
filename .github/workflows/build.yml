@@ -24,7 +24,6 @@ jobs:
           - '2.4'
           - '2.3'
           - '2.2'
-          - '2.1'
         db: ['']
         include:
           # Comment out due to ci/setup.sh stucking.
