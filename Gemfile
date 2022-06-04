@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gemspec
 
-gem 'rake', '~> 13.0.1'
+gem 'rake'
 gem 'rake-compiler', '~> 1.1.0'
 
 # For local debugging, irb is Gemified since Ruby 2.6
